@@ -1,22 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta name="keywords" content=""
+<meta name="keywords" content="">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First HTML Page</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Optional: Link to a CSS file -->
+    <title>Eric Duplessis</title>
+    <link rel="stylesheet" href="css/cw.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Welcome to My Website</h1>
+        <h1 id="heading1">Welcome to My Website</h1>
     </header>
     <main>
-        <p>This is a simple HTML page to get started!</p>
+        <p class="text-green text-background-yellow text-para">This is a simple HTML page to get started!</p>
         <a href="https://mcgill.ca">Link to McGill Website</a>
-        <img src="img/McGill_pic.jpg" alt="sample image">
+        <p><img src="assets/img/McGill_pic.jpg" alt="sample image" width="100%"></p><br>
+        <iframe src="assets/pdf//Duplessis_Eric_Database_Analysis.pdf" title="Sample PDF" width="1000" height="400"></iframe>
+        </br>
     </main>
     <footer>
+        <p>OL is an ordered list. numbered list</p>
+        <p>UL is an unordered list. bullet points</p>
+        <p>DL is an descriptive list. list and descriptions</p>
+        <ul>
+            <li>Point 1</li>
+            <li>Point 2</li>
+            <li>Point 3</li>
+        </ul>
+        <ol>
+            <li>Point 1</li>
+            <li>Point 2</li>
+            <li>Point 3</li>
+        </ol>
+        <dl>
+            <dl>Point 1</dl>
+            <dd>Blah Blah Blaaaaaaah</dd>
+            <dl>Point 2</dl>
+            <dd>Muah ha haaaaaaa</dd>
+            <dl>Point 3</dl>
+            <dd>Ya ya yaaaaaaa</dd>
+        </dl>
+        <table border="1">
+            <tr>
+                <th>Company</th>
+                <th>Country</th>
+                <th>Contract</th>
+            </tr>
+            <tr>
+                <td>Apple</td>
+                <td>USA</td>
+                <td>2025a</td>
+            </tr>
+            <tr>
+                <td>Google</td>
+                <td>Canada</td>
+                <td>2022c</td>
+            </tr>
+        </table>
+        <form>
+            <label>Call me!</label>
+            <input type="text" name="fname"></input>
+        </form>
         <p>&copy; 2025 My Website</p>
     </footer>
 </body>
