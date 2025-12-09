@@ -40,21 +40,90 @@
           Resume & CV
       </h2>
     </div>
-    <div class="centered-container">
+    <div class="resume-container">
       <div class="accordion" id="resumeAccordion">
+        <!-- Accordion Item 1 -->
         <div class="accordion-item">
           <h2 class="accordion-header" id="job1">
-            <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#job1Content">
-              Job Title — Organization
+            <button class="accordion-button custom-accordion-btn" type="button" 
+                    data-bs-toggle="collapse" data-bs-target="#job1Content" 
+                    aria-expanded="true" aria-controls="job1Content">
+              Values, Goals, and Career Focus
             </button>
           </h2>
-          <div id="job1Content" class="accordion-collapse collapse show">
+          <div id="job1Content" class="accordion-collapse collapse show" aria-labelledby="job1">
             <div class="accordion-body">
-            Description of job responsibilities, accomplishments, and impact.
+              Brief description of values, career focus and history.
             </div>
           </div>
         </div>
-        <!-- Add additional job & education items -->
+
+        <!-- Accordion Item 2 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="job2">
+            <button class="accordion-button custom-accordion-btn collapsed" type="button" 
+                    data-bs-toggle="collapse" data-bs-target="#job2Content" 
+                    aria-expanded="false" aria-controls="job2Content">
+              Education
+            </button>
+          </h2>
+          <div id="job2Content" class="accordion-collapse collapse" aria-labelledby="job2">
+            <div class="accordion-body">
+              Description of education experiences.
+            </div>
+          </div>
+        </div>
+
+        <!-- Accordion Item 3 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="job3">
+            <button class="accordion-button custom-accordion-btn collapsed" type="button" 
+                    data-bs-toggle="collapse" data-bs-target="#job3Content" 
+                    aria-expanded="false" aria-controls="job3Content">
+              Work Experience
+            </button>
+          </h2>
+          <div id="job3Content" class="accordion-collapse collapse" aria-labelledby="job3">
+            <div class="accordion-body">
+              Description of employment experiences.
+            </div>
+          </div>
+        </div>
+
+        <!-- Accordion Item 4 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="job4">
+            <button class="accordion-button custom-accordion-btn collapsed" type="button" 
+                    data-bs-toggle="collapse" data-bs-target="#job4Content" 
+                    aria-expanded="false" aria-controls="job4Content">
+              Awards & Distinctions
+            </button>
+          </h2>
+          <div id="job4Content" class="accordion-collapse collapse" aria-labelledby="job4">
+            <div class="accordion-body">
+              Description of awards and distinctions.
+            </div>
+          </div>
+        </div>
+
+        <!-- Accordion Item 5 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="job5">
+            <button class="accordion-button custom-accordion-btn collapsed" type="button" 
+                    data-bs-toggle="collapse" data-bs-target="#job5Content" 
+                    aria-expanded="false" aria-controls="job5Content">
+              Skillset
+            </button>
+          </h2>
+          <div id="job5Content" class="accordion-collapse collapse" aria-labelledby="job5">
+            <div class="accordion-body">
+              Description of soft and hard skills.
+            </div>
+          </div>
+        </div>
+
+        <!-- Add more accordion items below following the same structure -->
+
       </div>
     </div>
 

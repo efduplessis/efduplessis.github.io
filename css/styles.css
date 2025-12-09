@@ -132,6 +132,48 @@
   font-family: var(--main-font);
 }
 
+.resume-container {    /* Container boxes */
+  width: 60%;  
+  min-width: 350px;  
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 15px;
+  padding: 10px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 100, 0.2);
+  background-color: white;
+  font-family: var(--main-font);
+}
+
+/* Remove default Bootstrap accordion button styles */
+.custom-accordion-btn {
+  background-color: transparent !important;  /* no background */
+  border: none !important;                  /* remove border */
+  padding: 5 !important;                    /* remove padding */
+  box-shadow: none !important;              /* remove shadow */
+  color: var(--dark-blue);                  /* optional text color */
+  font-weight: bold; 
+  font-family: var(--main-font);                        /* optional */
+}
+
+.custom-accordion-btn:not(.collapsed) {
+  /* Optional: styling for expanded header */
+  color: var(--light-blue);
+}
+
+.custom-accordion-btn:focus {
+  box-shadow: none !important;              /* remove focus outline */
+}
+
+.accordion-item {
+  border: none !important;
+}
+
+.accordion-button {
+  border: none !important;
+  box-shadow: none !important; /* removes blue outline & inner shadows */
+}
+
 .btn-danger {
   background-color: var(--light-blue) !important;
   border-color: var(--light-blue) !important;
