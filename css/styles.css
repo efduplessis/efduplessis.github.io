@@ -1,0 +1,225 @@
+:root {
+  --dark-blue: #042867;
+  --light-blue: #1062ef;
+  --middle-grey: #909090;
+  --background: #eeeeee;
+  --main-font: "Montserrat", Arial, sans-serif;
+}
+
+.body {
+  background-color: var(--background);
+  background-size: 100%;
+  font-family: var(--main-font);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-attachment: fixed;
+  padding-top: 70px;   /* adjust depending on navbar height */
+}
+
+#heading1{
+  color: var(--dark-blue);
+  font-size: 50px;
+  font-family: var(--main-font);
+}
+
+#heading2{
+  color: var(--dark-blue);
+  font-size: 36px;
+  font-family: var(--main-font);
+}
+
+#heading3{
+  color: var(--dark-blue);
+  font-size: 20px;
+  font-family: var(--main-font);
+}
+
+#text-body{
+  color: var(--dark-blue);
+  font-size: 16px;
+  font-family: var(--main-font);
+}
+
+.text-para{
+  text-align: center;
+  text-transform: uppercase;
+  text-overflow: ellipsis;
+} 
+
+.navbar {
+  padding-top: 12px !important;     /* custom height */
+  padding-bottom: 12px !important;  /* custom height */
+  font-family: var(--main-font), Arial, sans-serif !important;
+}
+
+.navbar .nav-link {
+  padding-left: 0px !important;
+  padding-right: 40px !important;
+  color:  var(--dark-blue) !important;
+}
+
+.navbar .nav-link:hover {
+  text-decoration: underline;  /* underline when mouse over page link */
+  text-underline-offset: 3px;  /* distance from text to underline */
+  text-decoration-thickness: 1.5px; /* optional, makes the underline thicker */
+}
+
+.navbar .navbar-brand {   /* overrides to the brand name (on the left) in the navbar */
+  padding-left: 40px !important;
+  color:  var(--dark-blue) !important; 
+  display: flex;
+  flex-direction: column;   /* stack main and subtitle vertically */
+  align-items: flex-end;    /* right-align both lines */
+  line-height: 1.2;
+}
+
+.brand-main {
+  font-size: 1.45rem;       /* larger, main text of brand eric duplessis */
+  font-weight: bold;
+}
+
+.brand-subtitle {
+  font-size: 0.6rem;       /* smaller subtitle under the eric duplessis brand in the top left */
+  font-weight: normal; 
+}
+
+.navbar-toggler {
+  border: none !important;      /* overrides bootstrap and removes the grey outline on the hamburger menu */
+  box-shadow: none !important;  
+}
+
+.hero-image {
+  background-image: url('../assets/img/Headshot_Wide.png');  /* image source */
+  background-size: cover;     /* image full width of screen */
+  background-position: 66% center;     /* redefines the center of the image such that I stay visible as the browser window narrows */
+  background-repeat: no-repeat;
+
+  height: 650px;       /* adjust as needed */
+  display: flex;        /* lets you align content */
+  align-items: center;  /* vertical centering of text*/
+  padding-left: 16%;   /* positions text left with spacing */
+}
+
+.hero-text {
+  max-width: 450px;     /* prevents text from stretching too wide */
+}
+
+.tile {    /* Clickable tiles */
+  padding: 30px;
+  max-width: 90%;
+  align-items: normal;
+  border-radius: 12px;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform .2s;
+  border-left: 6px solid var(--light-blue);
+}
+.tile:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+.centered-container {    /* Container boxes */
+  width: 40%;  
+  min-width: 350px;  
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 15px;
+  padding: 35px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 100, 0.2);
+  background-color: white;
+  font-family: var(--main-font);
+}
+
+.btn-danger {
+  background-color: var(--light-blue) !important;
+  border-color: var(--light-blue) !important;
+}
+
+.btn-danger:hover {
+  background-color: var(--dark-blue) !important;
+  border-color: var(--dark-blue) !important;
+}
+
+/* ----- Portfolio page styling ----- */
+.portfolio-container {
+  width: 35%;  
+  min-width: 350px;  
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 15px;
+  padding: 15px;
+  background-color: white;
+  transition: width 1.2s ease;
+  box-shadow: 4px 4px 8px rgba(0, 0, 100, 0.2);
+}
+
+.portfolio-container:hover {
+  width: 60%;     /* expands/zooms in on the portfolio item */
+  cursor: pointer;
+}
+
+.portfolio-img {
+  width: 100%; 
+  margin: 0;          /* same width for all images */
+  height: auto;         /* keeps aspect ratio */
+  border-radius: 6px;   /* optional: rounded corners */
+}
+
+
+/* ----- Local navigation sidebar ----- */
+.local-nav {
+  margin-left: 25px;
+  position: sticky; /* sticky scrolling on the local nav menu */
+  top: 80px; /* stays below navbar when scrolling */
+}
+
+.local-nav .nav-link {
+  color: var(--dark-blue) !important;
+  margin-bottom: 10px;
+  border-radius: 20px;
+}
+
+.local-nav .nav-link:hover {
+  color: var(--light-blue) !important;
+  text-decoration: underline;
+  border-radius: 20px;
+  background-color: white;
+}
+
+/* Offset anchor links for fixed local navbar height */
+[data-anchor-offset] {
+  scroll-margin-top: 90px; /* height of your fixed navbar */
+}
+
+/* ----- Data projects content ----- */
+.project-container {
+  width: 80%;  
+  min-width: 350px;  
+  max-width: 800px;
+  margin: 0;
+  text-align: left;
+  border-radius: 15px;
+  padding: 15px;
+  background-color: white;
+  box-shadow: 4px 4px 8px rgba(0, 0, 100, 0.2);
+}
+
+
+@media (max-width: 767.98px) {   /* Centers the Services containers on small screens */
+  .project-container {
+    margin: 0 auto;      /* horizontally center */
+    text-align: center;  /* optional: center text and content */
+  }
+}
+
+/* Footer Styling */
+footer.site-footer,
+footer.footer {
+  background-color: var(--dark-blue) !important;   /* background */
+  color: white !important;                 /* text color */
+  font-family: var(--main-font);
+  margin-top: 70px !important;
+}
